@@ -27,7 +27,7 @@ export default function HomePage() {
                 </div>
             </div>
             
-            {/* <div className='about-section' id='about-section'>
+            <div className='about-section' id='about-section'>
                 <p className='about-text-area text-white'>
                     <h3>Welcome to Google Developer Student Club at De Anza College!</h3> <br />
                     <h7> We are a community-run developers student club supported by Google Developers. The GDSC enhances the educational, 
@@ -36,7 +36,7 @@ export default function HomePage() {
                     by promoting diversity in the tech community.</h7> <br/><br/> <button className='styled-button'>Our Team</button>
                 </p> 
                 <ControlledCarousel/>
-            </div> */}
+            </div>
             <Footer/>
         </div>
         
