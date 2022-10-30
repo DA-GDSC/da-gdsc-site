@@ -1,5 +1,4 @@
-import logo from '../static/img/logo.svg'
-import da_logo from '../static/img/deanza_logo.svg'
+import da_gdsc from '../static/img/da_gdsc.svg'
 
 
 import React from "react";
@@ -10,30 +9,30 @@ const NavbarMain = () => {
   return (
       <Navbar
         sticky="top"
-        className="navbar-main py-2 justify-content-center"
+        className="navbar-main py-2 "
         bg="light"
         variant="light"
         expand="lg"
       >
-        <div className={`${css(navStyles.navElements)} w-100`}>
-          <Row className="justify-content-between">
-            <Col
-              md={12}
-              lg={3}
-              className="d-flex flex-row justify-content-between"
-            >
+         <div className="py-2 md:px-10 w-screen flex justify-center items-center">
                <Navbar.Brand 
-               className="d-flex p-0 mx-0 align-items-center"
+               className="p-0 align-items-center"
                href="/"
                > 
                 <a>
-                  <img src={logo} width={50} style={{marginLeft: 20}} />
-                  <img src={da_logo} width={100} style={{marginLeft: 20}}/>
+                  <img src={da_gdsc} width={350} />
+        
                 </a>
               </Navbar.Brand>
-            </Col>  
-          </Row>
-        </div>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav" className="flex justify-end text-xl">
+                <Nav>
+                  <Nav.Link className="" href="/">About</Nav.Link>
+                  <Nav.Link href="/team">Team</Nav.Link>
+                  <Nav.Link href="/project">Project</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+           </div>
       </Navbar>
   );
 }

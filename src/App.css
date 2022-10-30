@@ -66,7 +66,7 @@ body {
     box-shadow: 0 4px 2px -2px rgb(180, 180, 180);
 }
 
-.navbar-toggle, .navbar-toggle:focus{
+/* .navbar-toggle, .navbar-toggle:focus{
     border: none;
     box-shadow: none;
     transition: background 0.5s ease;
@@ -74,7 +74,7 @@ body {
 
 .navbar-toggle:hover{
     background-color: rgba(0, 0, 0, 0.05);
-}
+} */
 
 h1 {
     font-size: 1.5rem;
@@ -141,7 +141,8 @@ h1 {
 }
 
 .social-icon {
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .link-container {
@@ -227,7 +228,3 @@ background-color:#FFFFFF;
 .footer-code {
     color: #000000;
 }
-
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
