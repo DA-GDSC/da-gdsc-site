@@ -8,7 +8,7 @@ export default function HomePage() {
     return (
         <div>
             <ParticlesAnimation/>
-            <div className="brand-container ">
+            <div className="brand-container">
                 <div className="brand flex flex-col items-center ">
                     <div className="text-center">
                     <h1 className="caption-title animated-effect">Google DSC @ De Anza</h1>
@@ -22,8 +22,9 @@ export default function HomePage() {
                         {homepage_icon.map((item) => 
                             <a href={item.link} target="_blank" className='social-icon'>
                             <img src={require(`../static/img/social_icon/${item.name}.svg`)} width='70px' 
-                            onMouseOver={e => (e.currentTarget.src = require(`../static/img/social_icon/${item.name}_color.svg`))}
-                            onMouseOut={e => (e.currentTarget.src = require(`../static/img/social_icon/${item.name}.svg`))}/>
+                            // onMouseOver={e => (e.currentTarget.src = require(`../static/img/social_icon/${item.name}_color.svg`))}
+                            // onMouseOut={e => (e.currentTarget.src = require(`../static/img/social_icon/${item.name}.svg`))}
+                            />
                             </a>)}
                     </div>
                 </div>
